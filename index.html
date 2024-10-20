@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FQD Nem AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="api-url" content="https://open.bigmodel.cn/api/paas/v4/chat/completions">
+    <meta name="api-key" content="2617490eb1dd4ebc072d9e1138b3d26f.poIuD2qFdXjvs2YP">
+    <style>
+        body {
+            background-image: url('images/B-J.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FQD Nem AI</h1>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="welcome-message">
+                    <p>欢迎使用 FQD Nem AI! 我是您的智能助手，随时为您服务。</p>
+                </div>
+                <div class="messages" id="messageContainer">
+                    <!-- 消息内容将在这里动态生成 -->
+                </div>
+                <div id="thinkingIndicator" class="thinking-indicator" style="display: none;">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="input-area">
+                <textarea id="userInput" placeholder="与FQD Nem对话..."></textarea>
+                <button class="emoji-btn" id="emojiButton">😊</button>
+                <div class="emoji-picker" id="emojiPicker">
+                    <!-- 表情将在这里动态生成 -->
+                </div>
+                <label for="imageUpload" class="image-upload-btn">📷</label>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <button class="send-btn" id="sendButton">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
